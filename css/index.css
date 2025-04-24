@@ -1,0 +1,160 @@
+/*animation de défilement*/
+/*scrolling animation*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #C4D9FF;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-family: "Raleway";
+}
+
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../fonts/Josefin-Sans.ttf") format("woff2"); 
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway.ttf") format("woff2");
+}
+
+/*afifchage général de la barre de navigation*/
+/*navbar display settings*/
+
+nav, .titles{
+    font-family : "Josefin Sans";
+}
+
+nav{    
+    /*size settings*/
+    max-width:100%;
+    position: sticky;
+    top: 0;
+
+    /*elements positioning settings*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*visibility and aesthetism details*/
+    background-color: white;
+    padding:0 2rem 0;
+    box-shadow: 0px 5px 7px black;
+    
+}
+
+.nav-contacts, .nav-categories{
+    list-style : none;
+    display: flex;
+    max-width:35%;
+}
+
+.nav-categories{
+    padding:0;
+}
+
+ .nav-categories li{
+    margin:0 1.5rem;
+    width:30%
+}
+
+.nav-contacts li img{
+    height:3.5rem;
+}
+
+/*paramètres d'affichage des footers*/
+/*footer display settings*/
+footer{
+    background-color: #C5BAFF;
+    margin-bottom:-30px;
+    border-top: solid 3px black;
+    padding-bottom: 3px;
+}
+
+
+/*paramètres d'affichage de l'introduction à la page*/
+/*display settings relative to the introduction*/
+
+.introduction{
+    vertical-align: middle;
+    width:50%;
+    margin: auto;
+}
+
+.introduction img{
+    height:250px;
+}
+
+#aboutMe{
+    background:#FBFBFB;
+}
+
+/*paramètre d'affichage des projets*/
+/*display settings relative to the projects*/
+
+.projectGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /*
+    j'ai choisi de conserver un affichage "grid" pour le moment où j'aurais plus de projets à afficher.
+    i chose to keep a grid display for when i have more projects to present.
+    */
+    width : 75%;
+    margin:auto;
+}
+
+.projectGrid img{
+    width : 50%;
+    margin:auto;
+    vertical-align: top;
+}
+
+.projectGrid
+{
+    vertical-align: bottom;
+}
+
+/*paramètres d'affichage des liens*/
+/*display settings relative to most links*/
+a {
+    color : initial;
+    text-decoration: initial;
+}
+
+.introduction, #aboutMe, #skills, #work, #projects{
+    margin: auto;
+    border-top:solid 3px black;
+    height:100vh;
+    align-items: center;
+    
+}
+
+/*paramètre d'affichage de certains liens en particulier*/
+/*display settings of specific links*/
+
+.visible-links{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.visible-links:hover{
+    color:blueviolet;
+}
+
+progress{
+    width: 100%;
+    height: 20px;
+    appearance: none; /* remove default styles */
+    border: none;
+    background-color: #C5BAFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
