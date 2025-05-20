@@ -1,0 +1,8 @@
+TODO : 
+1. ajouter le bouton pour changer la couleur de la page
+2. ajouter un menu *hamburger*
+3. centrer  verticalement les différents textes des ```div``` et les grossir
+4. ajouter les notes associées aux mots clés
+5. ```nav``` qui apparait lorsqu'on scroll up
+6. changer la taille et la couleur de la barre d'évaluation.
+7. traduire la page

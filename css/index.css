@@ -1,7 +1,21 @@
+/*adding the fonts used in the portfolio*/
+/*ajout des polices d'écriture du portfolio*/
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../fonts/Josefin_Sans/Josefin-Sans.ttf") format("woff2"); 
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway/Raleway.ttf") format("woff2");
+}
+
 /*animation de défilement*/
 /*scrolling animation*/
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -10,17 +24,6 @@ body{
     padding:0;
     text-align: center;
     font-family: "Raleway";
-}
-
-
-@font-face {
-    font-family: "Josefin Sans";
-    src: url("../fonts/Josefin-Sans.ttf") format("woff2"); 
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway.ttf") format("woff2");
 }
 
 /*afifchage général de la barre de navigation*/
@@ -32,7 +35,7 @@ nav, .titles{
 
 nav{    
     /*size settings*/
-    max-width:100%;
+    width:100%;
     position: sticky;
     top: 0;
 
@@ -64,7 +67,7 @@ nav{
 }
 
 .nav-contacts li img{
-    height:3.5rem;
+    width:3.5rem;
 }
 
 /*paramètres d'affichage des footers*/
@@ -127,10 +130,14 @@ a {
 }
 
 .introduction, #aboutMe, #skills, #work, #projects{
-    margin: auto;
-    border-top:solid 3px black;
-    height:100vh;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height:100vh;
+    border-top:solid 3px black;
+    padding:1rem;
     
 }
 
