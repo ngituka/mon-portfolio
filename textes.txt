@@ -1,0 +1,60 @@
+I am a 17 year old student at the IUT d'Orsay, part of the University of Paris-Saclay, in the IT department.
+Je suis un étudiant en BUT Informatique de 17 ans à l'IUT d'Orsay, branche de l'Université paris-Saclay.
+
+I am currently looking for a work-study opportunity (alternance) with a 24-month contract, in web development.
+Je recherche en ce moment une alternance de 24 mois en lien avec le développement web ou le développement d'applications.
+
+If you want to collaborate with me, click <a class="visible-links" href="#work">here</a> to get my contact and see if my profile matches your expectations !
+Si vous souhaitez collaborer avec moi, cliquez <a class="visible-links" href="#work">ici</a> pour me contacter, en espérant que mon profil soit ce que vous recherchez !
+
+
+
+I've gaiend interest for IT in 9th grade (troisième in French), during the 2020 quarantine.
+J’ai commencé à m’intéresser à l’informatique de manière générale en 3e, pendant le confinement. 
+
+I started programming simple projects on scratch, mainly little games, and ever since I've fallen in love with the process of developing projects and seeing them evolve.
+J’ai commencé par des projets simples sur Scratch, en créant des jeux simples, et depuis j’ai toujours aimé travailler sur des projets et les voir évoluer. C’est 
+
+In 2021, I started learning about web developing. I taught myself basics in HTML and CSS, along with some notions of javaScript
+ainsi que depuis 2021, je m’intéressé au développement Web. J’ai notamment pu apprendre en autodidacte certaines bases des langages HMTL et CSS ainsi que certaines notions de javaScript, 
+
+before learning more about this at college since September 2024. My dream is to work in this field which (find a better expression for this) and I'm looking forward to learning more about this profession, hopefully with you !
+avant d'en savoir plus à l’IUT depuis septembre 2024. Mon rêve est de travailler dans ce domaine qui me passionne tant, et j’ai hâte de pouvoir en apprendre davantage sur le métier 
+de développeur web, je l’espère avec vous !
+
+Here are the skills I've acquired (both on my on and at school) and am willing to perfect.
+Voici quelques compétences que j'ai acquises (seul comme dans le cadre scolaire) et que j'ai hâte de perfectionner.
+YUMETON is a school project that took place between Friday xxth September and Friday 29th November. the goal was to build a website for a fictive entertainment location,
+YUMETON est un projet scolaire qui s'est déroulé entre les vendredis xx septembre et 29 novembre. L'objectif était de créer un site web pour un lieu fictif.
+
+and I've decided to make an art-assisting website, named YUMETON. Thanks to this work, I've learned many things, such as  : 
+consacré au divertissement, et j'ai choisi de créer un site de création artistique, du nom de Yumeton. Grâce à celui-ci, j'ai notamment appris à : 
+
+Efficiently looking for information on the Internet.
+Rechercher efficacement les informations nécessaires sur Internet.
+
+Using a flexbox display to place elements on a page.
+Placer des éléments dans un affichage flexbox sur une page.
+
+Making my pages responsive depending on the size of the screen (using media queries)
+Rendre mes pages adaptatives selon la taille de l’écran (media queries).
+
+
+Thank you very much for visiting my page ! I'm glad you gave my website and projects a little look... but what did you think of them ?
+Merci beaucoup d'avoir visité ma page web ! Ça me fait réellement chaud au cœur de savoir que vous avez pris de votre temps pour regarder mes projets et lire mon parcours...
+
+Are there things i could've improved ? Or (even better), would you like us to work together ? I'd love to learn from someone while giving them
+mais qu'en avez-vous pensé ? Qu'est-ce que je pourrais améliorer ? N'hésitez pas à me contacter pour m'aider à progresser (ou encore mieux, pour travailler ensemble ^^)
+
+a hand in their work, and i hope we can collaborate later !
+Je serais ravi d'apprendre tout en aidant quelqu'un dans ses projets !
+
+If you are interested, please contact me ! The links to my different socials are <span id="contactsLocation">in this pages menu.</span>
+Je me répète (peut-être trop) mais n'hésitez pas à me contacter ! Les liens vers mes différents moyens de contacts sont <span id="contactsLocation">dans la barre de navigation.</span>
+
+
+<p>This website was developed by myself in 2025.</p>
+Ce site Internet a été développé par moi, en 2025.
+
+<p>All rights reserved.</p>
+Tous droits réservés.
