@@ -59,10 +59,10 @@ function switchPageTheme() {
     console.log("color chanfged to red !");
 }
 
-function displayNavbar(previousPosition)
+function displayNavbar(LpreviousPosition)
 {
   let currentPosition = window.scrollY;
-  if (previousPosition > currentPosition)
+  if (LpreviousPosition > currentPosition)
   {
     let navbar = document.getElementsByTagName("nav")[0];
     navbar.style.position = "fixed";
@@ -73,7 +73,7 @@ function displayNavbar(previousPosition)
     navbar.style.position = "sticky";
   }
 
-  previousPosition = currentPosition;
+  LpreviousPosition = currentPosition;
 }
 
 
