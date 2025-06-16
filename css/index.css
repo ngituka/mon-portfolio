@@ -104,7 +104,7 @@ footer{
 
 .projectGrid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /*
     j'ai choisi de conserver un affichage "grid" pour le moment où j'aurais plus de projets à afficher.
     i chose to keep a grid display for when i have more projects to present.
