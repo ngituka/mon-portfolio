@@ -9,7 +9,7 @@ Si vous souhaitez collaborer avec moi, cliquez <a class="visible-links" href="#w
 
 
 
-I've gaiend interest for IT in 9th grade (troisième in French), during the 2020 quarantine.
+I've gained interest for IT in 9th grade (troisième in French), during the 2020 quarantine.
 J’ai commencé à m’intéresser à l’informatique de manière générale en 3e, pendant le confinement. 
 
 I started programming simple projects on scratch, mainly little games, and ever since I've fallen in love with the process of developing projects and seeing them evolve.

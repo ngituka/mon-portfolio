@@ -1,20 +1,9 @@
-function changeLocation() {
-    const contact = document.getElementById("contactsLocation");
-    if (contact) {
-        contact.innerHTML = "in the footer";
-    }
-}
-
-var estimatedPhoneWidth = 900;
-
-if (screen.width <= estimatedPhoneWidth || window.innerHeight <= estimatedPhoneWidth) {
-    changeLocation();
-}
-
-var skillButton = document.getElementById("skill-revealer");
-var body = document.getElementsByTagName("body")[0];
-
 document.addEventListener("DOMContentLoaded", () => {
+
+  var skillButton = document.getElementById("skill-revealer");
+  var body = document.getElementsByTagName("body")[0];
+  var navbar = document.getElementsByTagName("nav")[0];
+  
   /*animation des competences*/  
   document.getElementById("skill-revealer").addEventListener("click", () => {
         animateProgressBar("html", 50);
@@ -25,11 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   /*apparition de la barre de navigation*/
-  let previousPosition = window.scrollY;
-  window.addEventListener('scroll', (event) => {
-    console.log('Scroll event fired!');
-    displayNavbar(previousPosition)
-  });
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function(){
+    let currentPosition = window.scrollY;
+    if (prevScrollpos > currentPosition)  
+    {
+      console.log("scroll up detected")
+      navbar.style.top = "0";
+    }
+    else
+    {
+      console.log("scroll down detected")
+      navbar.style.top = "-80px";
+    }
+    prevScrollpos = currentPosition;
+  }
 
 
 });
@@ -52,6 +51,8 @@ function animateProgressBar(progressElementID, targetValue) {
     console.log("progress bars have been animated");
 }
 
+/*
+
 // Change background color
 function switchPageTheme() {
     var Page = document.getElementsByTagName("body")[0];
@@ -59,22 +60,24 @@ function switchPageTheme() {
     console.log("color chanfged to red !");
 }
 
-function displayNavbar(LpreviousPosition)
-{
-  let currentPosition = window.scrollY;
-  if (LpreviousPosition > currentPosition)
-  {
-    let navbar = document.getElementsByTagName("nav")[0];
-    navbar.style.position = "fixed";
-  }
-  else
-  {
-    let navbar = document.getElementsByTagName("nav")[0];
-    navbar.style.position = "sticky";
-  }
-
-  LpreviousPosition = currentPosition;
+function changeLocation() {
+    const contact = document.getElementById("contactsLocation");
+    if (contact) {
+        contact.innerHTML = "in the footer";
+    }
 }
+
+var estimatedPhoneWidth = 900;
+
+if (screen.width <= estimatedPhoneWidth || window.innerHeight <= estimatedPhoneWidth) {
+    changeLocation();
+}
+
+
+
+*/
+
+
 
 
 
