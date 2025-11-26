@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="./css/index.css">
     
 </head>
-<body onscroll="scrollDown()">
+<body>
     <script src="./script/index.js"></script>
     <header>
-        <nav>
+        <nav class="nav-mobile">
+                <a href="./index.html" target="_self"><img class="icons"  src="./images/french-icon.png" alt="french"></a>
+                <button id="hamburgerMenu">
+                    <img class="icons" src="./images/menus.png" alt="hamburger menu">
+                </button>
+        </nav>
+        
+        <nav class="nav-cat-con">
             
-            <ul class="nav-categories">
+            <ul class="categories">
                 <li class="aboutMe"><a href="#aboutMe">More about me !</a></li>
                 <li class="skills"><a href="#skills">My technical skills</a></li>
                 <li><a href="#projects">My projects</a></li>
@@ -19,11 +26,21 @@
             </ul>
 
 
-            <ul class="nav-contacts">
-                <li><a href="https://instagram.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/instagram.png" alt="instagram"></a></li>
-                <li><a href="https://www.linkedin.com/in/jannie-ngoy-ituka-a6a084335/" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/linkedin.png" alt="linkedin"></a></li>
-                <li><a href="mailto:janniengoyituka.pro@gmail.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/email.png" alt="mail"></a></li>
-                <li><a href="./index.html" target="_self"><img class="translate"  src="./images/french-icon.png" alt="français"></a></li>
+            <ul class="contacts">
+                <!--cette partie n'est utilisée que dans l'affichage "ordinateur"-->
+                <div class="desktop">
+                    <li><a href="https://instagram.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jannie-ngoy-ituka-a6a084335/" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/linkedin.png" alt="linkedin"></a></li>
+                    <li><a href="mailto:janniengoyituka.pro@gmail.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/email.png" alt="mail"></a></li>
+                    <li><a href="./index.html" target="_self"><img class="icons"  src="./images/french-icon.png" alt="french"></a></li>
+                </div>
+
+                <!--cette partie n'est utilisée que dans l'affichage "mobile"-->
+                <div class="mobile">
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/jannie-ngoy-ituka-a6a084335/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:janniengoyituka.pro@gmail.com" target="_blank">E-mail</a></li>
+                </div>
             </ul>
 
         </nav>
@@ -38,7 +55,7 @@
             <div class="presentation">
                 <p>I am a 17 year old student at the IUT d'Orsay, part of the University of Paris-Saclay, in the IT department.</p>
                 <p> 
-                    I am currently looking for a work-study opportunity (alternance) with a 24-month contract, in web development.
+                    I am currently looking for a 3-month internship starting in April, related to web or software development.
                     If you want to collaborate with me, click <a class="visible-links" href="#work">here</a> to get my contact and see if my profile matches your expectations !
                 </p>
             </div>

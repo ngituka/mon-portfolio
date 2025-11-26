@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="./css/index.css">
     
 </head>
-<body onscroll="scrollDown()">
+<body>
     <script src="./script/index.js"></script>
     <header>
-        <nav>
+        <nav class="nav-mobile">
+                <a href="./en-index.html" target="_self"><img class="icons"  src="./images/english-icon.png" alt="french"></a>
+                <button id="hamburgerMenu">
+                    <img class="icons" src="./images/menus.png" alt="hamburger menu">
+                </button>
+        </nav>
+        
+        <nav class="nav-cat-con">
             
-            <ul class="nav-categories">
+            <ul class="categories">
                 <li class="aboutMe"><a href="#aboutMe">Qui suis-je ?</a></li>
                 <li class="skills"><a href="#skills">Mes compétences</a></li>
                 <li><a href="#projects">Mes projets</a></li>
@@ -19,11 +26,21 @@
             </ul>
 
 
-            <ul class="nav-contacts">
-                <li><a href="https://instagram.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/instagram.png" alt="instagram"></a></li>
-                <li><a href="https://www.linkedin.com/in/jannie-ngoy-ituka-a6a084335/" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/linkedin.png" alt="linkedin"></a></li>
-                <li><a href="mailto:janniengoyituka.pro@gmail.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/email.png" alt="mail"></a></li>
-                <li><a href="./en-index.html" target="_self"><img class="translate"  src="./images/english-icon.png" alt="english"></a></li>
+            <ul class="contacts">
+                <!--cette partie n'est utilisée que dans l'affichage "ordinateur"-->
+                <div class="desktop">
+                    <li><a href="https://instagram.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jannie-ngoy-ituka-a6a084335/" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/linkedin.png" alt="linkedin"></a></li>
+                    <li><a href="mailto:janniengoyituka.pro@gmail.com" target="_blank"><img class="socials"  src="./images/logos-liens/LIGHT-MODE/email.png" alt="mail"></a></li>
+                    <li><a href="./en-index.html" target="_self"><img class="icons"  src="./images/english-icon.png" alt="french"></a></li>
+                </div>
+
+                <!--cette partie n'est utilisée que dans l'affichage "mobile"-->
+                <div class="mobile">
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/jannie-ngoy-ituka-a6a084335/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:janniengoyituka.pro@gmail.com" target="_blank">E-mail</a></li>
+                </div>
             </ul>
 
         </nav>
@@ -38,7 +55,7 @@
             <div class="presentation">
                 <p>Je suis un étudiant en BUT Informatique de 17 ans à l'IUT d'Orsay, branche de l'Université paris-Saclay.</p>
                 <p> 
-                    Je recherche en ce moment une alternance de 24 mois en lien avec le développement web ou le développement d'applications.
+                    Je recherche en ce moment un stage de 3 mois, dès avril, en lien avec le développement web ou le développement d'applications.
                     Si vous souhaitez collaborer avec moi, cliquez <a class="visible-links" href="#work">ici</a> pour me contacter, en espérant que mon profil soit ce que vous recherchez !
                 </p>
             </div>

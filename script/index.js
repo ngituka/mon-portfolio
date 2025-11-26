@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  let isToggled = true;
+
   var skillButton = document.getElementById("skill-revealer");
   var body = document.getElementsByTagName("body")[0];
-  var navbar = document.getElementsByTagName("nav")[0];
-  
+  var navbarMobile = document.getElementsByClassName("nav-mobile")[0];
+  var navbarDesktop = document.getElementsByClassName("nav-cat-con")[0];
+
   /*animation des competences*/  
   document.getElementById("skill-revealer").addEventListener("click", () => {
         animateProgressBar("html", 50);
@@ -19,15 +22,37 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPosition = window.scrollY;
     if (prevScrollpos > currentPosition)  
     {
-      console.log("scroll up detected")
-      navbar.style.top = "0";
+      if(window.innerWidth <= 910){
+        navbarMobile.style.top = "0";
+      }
+      else{
+        navbarDesktop.style.top = "0";
+      }
+      
     }
     else
     {
-      console.log("scroll down detected")
-      navbar.style.top = "-80px";
+      if(window.innerWidth <= 910){
+        navbarMobile.style.top = "-80px";
+      }
+      else{
+        navbarDesktop.style.top = "-80px";
+      }
     }
     prevScrollpos = currentPosition;
+  }
+
+  /*gestion du menu hamburger*/
+  document.getElementById("hamburgerMenu").addEventListener("click", ()=>{
+    isToggled = toggleHamburgerMenu(isToggled);
+  });
+
+  /*desactivation du menu quand on agrandit l'écran*/
+  var prevWidth = window.innerWidth;
+  window.onresize = function(){
+    let currentWidth = window.innerWidth;
+    adjustNavBar(isToggled, prevWidth);
+    prevScrollpos = currentWidth;
   }
 
 
@@ -49,33 +74,31 @@ function animateProgressBar(progressElementID, targetValue) {
     }, 5);
 
     console.log("progress bars have been animated");
+};
+
+function toggleHamburgerMenu(isToggled){
+  let nav = document.getElementsByClassName("nav-cat-con")[0];
+  if(isToggled){
+    nav.style.visibility = "hidden";
+    isToggled = false;
+  }
+  else{
+    nav.style.visibility = "";
+    isToggled = true;
+  }
+
+  return isToggled;
 }
 
-/*
-
-// Change background color
-function switchPageTheme() {
-    var Page = document.getElementsByTagName("body")[0];
-    Page.style.backgroundColor = "red";
-    console.log("color chanfged to red !");
+//manage screen size change
+function adjustNavBar(isToggled, prevWidth){
+  //when back to bigger width, if toggled untoggle)
+  if(window.innerWidth > prevWidth && window.innerWidth>=910){
+    let nav = document.getElementsByClassName("nav-cat-con")[0];
+    nav.style.visibility = "";
+    isToggled = false;
+  } 
 }
-
-function changeLocation() {
-    const contact = document.getElementById("contactsLocation");
-    if (contact) {
-        contact.innerHTML = "in the footer";
-    }
-}
-
-var estimatedPhoneWidth = 900;
-
-if (screen.width <= estimatedPhoneWidth || window.innerHeight <= estimatedPhoneWidth) {
-    changeLocation();
-}
-
-
-
-*/
 
 
 
